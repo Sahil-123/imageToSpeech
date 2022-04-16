@@ -1,0 +1,127 @@
+
+body{
+    display: flex;
+    background-color: rgb(128, 245, 200);
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 50px;
+    padding: 20px;
+    background-color:rgb(128, 245, 200);
+    box-shadow: 1px 5px 10px 5px grey;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    position: relative
+}
+
+
+
+#loader{
+    display:none ;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 6px solid rgb(255, 255, 255);
+    border-top: 5px solid blue;
+    animation: loading 1000ms linear infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#text{
+    width: 50%;
+}
+
+
+.uploadBox{
+    border-radius: 100px;
+   border: 2px solid rgb(0, 0, 0);
+    font-size: 14px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 3px 10px 1px grey;
+    position: inherit;
+    margin-bottom: 10px;
+}
+
+.uploadBox::-webkit-file-upload-button{
+   padding: 2px;
+    border-radius: 50px;
+    margin-right:10px;
+    background-color: blue;
+    color:rgb(255, 255, 255)
+}
+
+.uploadBox::-webkit-file-upload-button:hover{
+   background-color: rgb(38, 38, 128);
+}
+
+
+
+.img1{
+    max-width: 90%;
+    max-height: 50%;
+    border-radius: 10px;
+    /* box-shadow: 1px 3px 10px 1px grey; */
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+
+.btns{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn1{
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: 1px 3px 10px 1px grey;
+}
+
+.btn2{
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: 1px 3px 10px 1px grey;
+}
+.btn1:hover{
+    background-color: aqua;
+}
+
+.btn2:hover{
+    background-color: aqua;
+}
+
+.myText{  
+    box-shadow: 1px 3px 10px 1px grey;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    overflow: auto;
+    border-radius: 10px;
+}
